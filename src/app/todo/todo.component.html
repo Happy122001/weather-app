@@ -1,0 +1,15 @@
+<div class="card shadow-lg mt-5">
+    <div class="card-header text-center py-4 border-0">
+        <h1 class="display-6 fw-bold">World Weather app</h1>
+    </div>
+    <div class="card-body p-4">
+        <ul class="list-group">
+            <li class="list-group-item mb-2 border py-3 rounded-3" *ngFor="let item of todos">
+                <button class="btn text-success border-0" (click)="cntselect(item.title)" >
+                    {{item.title}}
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+
